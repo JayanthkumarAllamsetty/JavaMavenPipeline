@@ -1,6 +1,6 @@
 node{
   stage('SCM Checkout'){
-    git 'https://github.com/JayanthkumarAllamsetty/JavaMavenPipeline.git'
+    git branch:'main',url: 'https://github.com/JayanthkumarAllamsetty/JavaMavenPipeline.git'
   }
   stage('Compile-Package'){
     def mvnHome = tool name: 'Maven', type: 'maven'
